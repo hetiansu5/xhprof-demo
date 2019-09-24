@@ -1,0 +1,8 @@
+{
+    "name": "tinson/xhgui-demo",
+    "description": "A demo for collecting and storing XHProf results for later use by XHGUI.",
+    "require": {
+        "php": ">=5.6.0",
+        "tinson/xhprof-collector": "~1.1.3"
+    }
+}

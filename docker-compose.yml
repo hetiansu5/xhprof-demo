@@ -1,0 +1,19 @@
+version: "2"
+
+services:
+   demo.test:
+     image: tinson/centos6.8-nginx-php7.0-tideways
+     expose:
+       - 80
+     volumes:
+       - ".:/www/demo"
+     restart: always
+     environment:
+       VIRTUAL_HOST: demo.jq-docker.com
+     container_name: demo.test
+     entrypoint: "/www/demo/assets/entrypoint.sh"
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
