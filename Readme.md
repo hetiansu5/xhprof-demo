@@ -48,6 +48,9 @@ docker-compose up -d
 
 ### 访问
 ```
+# 将域名加入本地Host
+echo "127.0.0.1 demo.jq-docekr.com" >> /etc/hosts
+# 访问
 curl "http://demo.jq-docekr.com/index.php?test=1"
 ```
 
