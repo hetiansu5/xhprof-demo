@@ -10,9 +10,11 @@
 
 - 搭建Docker的基础环境
 - 启动Nginx-Proxy网络代理
-- docker-compose.yml配置文件。
+- docker-compose.yml配置文件
+    - assets/entrypoint.sh 可根据实际修改
+    - assets/nignx/conf/server/demo.conf 可根据实际修改
 
-### 启用Xhprof收集功能
+### 开启Xhprof配置
 方案一：在Nginx配置中植入如下配置： 
 
 ```
@@ -42,6 +44,11 @@ require '/www/demo/vendor/tinson/xhprof-collector/src/collector.php';
 ### 启动服务
 ```
 docker-compose up -d
+```
+
+### 访问
+```
+curl "http://demo.jq-docekr.com/index.php?test=1"
 ```
 
 
