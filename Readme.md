@@ -1,5 +1,5 @@
 ## 简介
-本项目为Xhprof性能分析工具的测试demo，将收集的数据上报到MongoDB，通过[XHGUI可视化后台]((https://github.com/hetiansu5/xhgui-dashboard))查询性能报告。  
+本项目为Xhprof性能分析工具的测试demo，将收集的数据上报到MongoDB，通过[XHGUI可视化后台](https://github.com/hetiansu5/xhgui-dashboard)查询性能报告。  
   
 本项目的服务是通过Docker容器启动，只需要搭建好环境，即可实现一键启动。
 
